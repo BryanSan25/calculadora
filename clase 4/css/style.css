@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+body {
+    color: white;
+    background-color: #131313;
+}
+main {
+    width: 90%;
+    margin: 100px auto;
+
+}
+@media screen and (min-width: 743px) {
+    main {
+        width: 50%;
+    }
+}
+#screen {
+    background-color: rgb(53, 53, 53);
+    text-align: right;
+    font-size: 30px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    min-height: 50px;
+    max-height: 50px;
+}
+#btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.btn {
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    margin: 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: 2px solid rgb(32, 32, 32);
+}
+.btn:nth-child(16) {
+    background-color: rgb(76, 0, 255);
+    grid-row: 4/6;
+    grid-column: 4/5;
+    padding-top: 15%;
+    font-size: 30px;
+}
+.btn:hover {
+    outline: 1px white solid;
+}
+.btn:active {
+    outline: 2px white solid;
+    outline-offset: 2px;
+}
